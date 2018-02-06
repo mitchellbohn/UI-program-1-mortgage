@@ -1,0 +1,12 @@
+C:\Users\Mitchell\Documents\GitHub\UI-program-1-mortgage\Mortgage\Mortgage\bin\Debug\Mortgage.exe.config
+C:\Users\Mitchell\Documents\GitHub\UI-program-1-mortgage\Mortgage\Mortgage\bin\Debug\Mortgage.exe
+C:\Users\Mitchell\Documents\GitHub\UI-program-1-mortgage\Mortgage\Mortgage\bin\Debug\Mortgage.pdb
+C:\Users\Mitchell\Documents\GitHub\UI-program-1-mortgage\Mortgage\Mortgage\bin\Debug\Mortgage.xml
+C:\Users\Mitchell\Documents\GitHub\UI-program-1-mortgage\Mortgage\Mortgage\obj\Debug\Mortgage.vbprojResolveAssemblyReference.cache
+C:\Users\Mitchell\Documents\GitHub\UI-program-1-mortgage\Mortgage\Mortgage\obj\Debug\Mortgage.Form1.resources
+C:\Users\Mitchell\Documents\GitHub\UI-program-1-mortgage\Mortgage\Mortgage\obj\Debug\Mortgage.Resources.resources
+C:\Users\Mitchell\Documents\GitHub\UI-program-1-mortgage\Mortgage\Mortgage\obj\Debug\Mortgage.vbproj.GenerateResource.Cache
+C:\Users\Mitchell\Documents\GitHub\UI-program-1-mortgage\Mortgage\Mortgage\obj\Debug\Mortgage.vbproj.CoreCompileInputs.cache
+C:\Users\Mitchell\Documents\GitHub\UI-program-1-mortgage\Mortgage\Mortgage\obj\Debug\Mortgage.exe
+C:\Users\Mitchell\Documents\GitHub\UI-program-1-mortgage\Mortgage\Mortgage\obj\Debug\Mortgage.xml
+C:\Users\Mitchell\Documents\GitHub\UI-program-1-mortgage\Mortgage\Mortgage\obj\Debug\Mortgage.pdb
