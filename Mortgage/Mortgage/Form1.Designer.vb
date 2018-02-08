@@ -35,133 +35,197 @@ Partial Class Form1
         Me.Term = New System.Windows.Forms.Label()
         Me.MortLabel = New System.Windows.Forms.Label()
         Me.Mortgage = New System.Windows.Forms.TextBox()
+        Me.HouseIcon = New System.Windows.Forms.PictureBox()
+        Me.Title = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.HouseIcon, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TextPrice
         '
-        Me.TextPrice.Location = New System.Drawing.Point(190, 21)
+        Me.TextPrice.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.TextPrice.BackColor = System.Drawing.Color.PaleTurquoise
+        Me.TextPrice.Location = New System.Drawing.Point(204, 130)
         Me.TextPrice.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.TextPrice.Name = "TextPrice"
-        Me.TextPrice.Size = New System.Drawing.Size(261, 28)
+        Me.TextPrice.Size = New System.Drawing.Size(241, 28)
         Me.TextPrice.TabIndex = 0
         '
         'TextPayment
         '
-        Me.TextPayment.Location = New System.Drawing.Point(190, 65)
+        Me.TextPayment.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.TextPayment.BackColor = System.Drawing.Color.PaleTurquoise
+        Me.TextPayment.Location = New System.Drawing.Point(204, 174)
         Me.TextPayment.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.TextPayment.Name = "TextPayment"
-        Me.TextPayment.Size = New System.Drawing.Size(261, 28)
+        Me.TextPayment.Size = New System.Drawing.Size(241, 28)
         Me.TextPayment.TabIndex = 1
         '
         'TextInterest
         '
-        Me.TextInterest.Location = New System.Drawing.Point(190, 108)
+        Me.TextInterest.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.TextInterest.BackColor = System.Drawing.Color.PaleTurquoise
+        Me.TextInterest.Location = New System.Drawing.Point(204, 217)
         Me.TextInterest.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.TextInterest.Name = "TextInterest"
-        Me.TextInterest.Size = New System.Drawing.Size(261, 28)
+        Me.TextInterest.Size = New System.Drawing.Size(241, 28)
         Me.TextInterest.TabIndex = 2
         '
         'TextTerm
         '
-        Me.TextTerm.Location = New System.Drawing.Point(190, 153)
+        Me.TextTerm.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.TextTerm.BackColor = System.Drawing.Color.PaleTurquoise
+        Me.TextTerm.Location = New System.Drawing.Point(204, 262)
         Me.TextTerm.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.TextTerm.Name = "TextTerm"
-        Me.TextTerm.Size = New System.Drawing.Size(261, 28)
+        Me.TextTerm.Size = New System.Drawing.Size(241, 28)
         Me.TextTerm.TabIndex = 3
         '
         'Calculate
         '
-        Me.Calculate.Location = New System.Drawing.Point(190, 195)
+        Me.Calculate.BackColor = System.Drawing.Color.PaleGreen
+        Me.Calculate.Location = New System.Drawing.Point(204, 302)
         Me.Calculate.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.Calculate.Name = "Calculate"
         Me.Calculate.Size = New System.Drawing.Size(124, 37)
         Me.Calculate.TabIndex = 8
         Me.Calculate.Text = "Calculate"
-        Me.Calculate.UseVisualStyleBackColor = True
+        Me.Calculate.UseVisualStyleBackColor = False
         '
         'Clear
         '
-        Me.Clear.Location = New System.Drawing.Point(20, 366)
+        Me.Clear.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Clear.Location = New System.Drawing.Point(12, 532)
         Me.Clear.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.Clear.Name = "Clear"
         Me.Clear.Size = New System.Drawing.Size(124, 37)
         Me.Clear.TabIndex = 9
         Me.Clear.Text = "Clear"
-        Me.Clear.UseVisualStyleBackColor = True
+        Me.Clear.UseVisualStyleBackColor = False
         '
         'Quit
         '
-        Me.Quit.Location = New System.Drawing.Point(329, 366)
+        Me.Quit.BackColor = System.Drawing.Color.Pink
+        Me.Quit.Location = New System.Drawing.Point(321, 532)
         Me.Quit.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.Quit.Name = "Quit"
         Me.Quit.Size = New System.Drawing.Size(124, 37)
         Me.Quit.TabIndex = 10
         Me.Quit.Text = "Quit"
-        Me.Quit.UseVisualStyleBackColor = True
+        Me.Quit.UseVisualStyleBackColor = False
         '
         'InterestRate
         '
-        Me.InterestRate.AutoSize = True
-        Me.InterestRate.Location = New System.Drawing.Point(67, 108)
+        Me.InterestRate.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.InterestRate.ForeColor = System.Drawing.SystemColors.Control
+        Me.InterestRate.Location = New System.Drawing.Point(13, 218)
         Me.InterestRate.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.InterestRate.Name = "InterestRate"
-        Me.InterestRate.Size = New System.Drawing.Size(112, 21)
+        Me.InterestRate.Size = New System.Drawing.Size(189, 27)
         Me.InterestRate.TabIndex = 6
         Me.InterestRate.Text = "Interest Rate"
+        Me.InterestRate.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'HousePayment
         '
-        Me.HousePayment.AutoSize = True
-        Me.HousePayment.Location = New System.Drawing.Point(43, 65)
+        Me.HousePayment.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HousePayment.ForeColor = System.Drawing.SystemColors.Control
+        Me.HousePayment.Location = New System.Drawing.Point(13, 175)
         Me.HousePayment.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.HousePayment.Name = "HousePayment"
-        Me.HousePayment.Size = New System.Drawing.Size(137, 21)
+        Me.HousePayment.Size = New System.Drawing.Size(183, 27)
         Me.HousePayment.TabIndex = 5
         Me.HousePayment.Text = "House Payment"
+        Me.HousePayment.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'HousePrice
         '
-        Me.HousePrice.AutoSize = True
-        Me.HousePrice.Location = New System.Drawing.Point(71, 21)
+        Me.HousePrice.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HousePrice.ForeColor = System.Drawing.SystemColors.Control
+        Me.HousePrice.Location = New System.Drawing.Point(13, 131)
         Me.HousePrice.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.HousePrice.Name = "HousePrice"
-        Me.HousePrice.Size = New System.Drawing.Size(108, 21)
+        Me.HousePrice.Size = New System.Drawing.Size(183, 27)
         Me.HousePrice.TabIndex = 4
         Me.HousePrice.Text = "House Price"
+        Me.HousePrice.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Term
         '
-        Me.Term.AutoSize = True
-        Me.Term.Location = New System.Drawing.Point(98, 153)
+        Me.Term.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Term.ForeColor = System.Drawing.SystemColors.Control
+        Me.Term.Location = New System.Drawing.Point(13, 262)
         Me.Term.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Term.Name = "Term"
-        Me.Term.Size = New System.Drawing.Size(85, 42)
+        Me.Term.Size = New System.Drawing.Size(183, 27)
         Me.Term.TabIndex = 7
-        Me.Term.Text = "Term" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(in years)"
+        Me.Term.Text = "Term (in years)"
+        Me.Term.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'MortLabel
         '
-        Me.MortLabel.AutoSize = True
-        Me.MortLabel.Location = New System.Drawing.Point(20, 241)
+        Me.MortLabel.Font = New System.Drawing.Font("Arial", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MortLabel.ForeColor = System.Drawing.SystemColors.Control
+        Me.MortLabel.Location = New System.Drawing.Point(13, 406)
         Me.MortLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.MortLabel.Name = "MortLabel"
-        Me.MortLabel.Size = New System.Drawing.Size(161, 42)
+        Me.MortLabel.Size = New System.Drawing.Size(183, 42)
         Me.MortLabel.TabIndex = 11
         Me.MortLabel.Text = "Mortgage Payment" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(in months)"
+        Me.MortLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.MortLabel.Visible = False
         '
         'Mortgage
         '
-        Me.Mortgage.Location = New System.Drawing.Point(190, 241)
+        Me.Mortgage.BackColor = System.Drawing.Color.PaleTurquoise
+        Me.Mortgage.Location = New System.Drawing.Point(204, 414)
         Me.Mortgage.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.Mortgage.Name = "Mortgage"
-        Me.Mortgage.Size = New System.Drawing.Size(261, 28)
+        Me.Mortgage.Size = New System.Drawing.Size(241, 28)
         Me.Mortgage.TabIndex = 12
+        Me.Mortgage.Visible = False
+        '
+        'HouseIcon
+        '
+        Me.HouseIcon.BackColor = System.Drawing.Color.Turquoise
+        Me.HouseIcon.Image = Global.Mortgage.My.Resources.Resources.house
+        Me.HouseIcon.Location = New System.Drawing.Point(13, 13)
+        Me.HouseIcon.Name = "HouseIcon"
+        Me.HouseIcon.Size = New System.Drawing.Size(64, 64)
+        Me.HouseIcon.TabIndex = 13
+        Me.HouseIcon.TabStop = False
+        '
+        'Title
+        '
+        Me.Title.AutoSize = True
+        Me.Title.BackColor = System.Drawing.Color.Turquoise
+        Me.Title.Font = New System.Drawing.Font("Arial", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Title.ForeColor = System.Drawing.Color.Black
+        Me.Title.Location = New System.Drawing.Point(83, 31)
+        Me.Title.Name = "Title"
+        Me.Title.Size = New System.Drawing.Size(358, 31)
+        Me.Title.TabIndex = 14
+        Me.Title.Text = "Mitchell's Mortgage Calculator"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Turquoise
+        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(458, 90)
+        Me.PictureBox1.TabIndex = 15
+        Me.PictureBox1.TabStop = False
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 21.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(473, 422)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(458, 584)
+        Me.Controls.Add(Me.Title)
+        Me.Controls.Add(Me.HouseIcon)
         Me.Controls.Add(Me.Mortgage)
         Me.Controls.Add(Me.MortLabel)
         Me.Controls.Add(Me.Quit)
@@ -175,10 +239,13 @@ Partial Class Form1
         Me.Controls.Add(Me.TextInterest)
         Me.Controls.Add(Me.TextPayment)
         Me.Controls.Add(Me.TextPrice)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.Name = "Form1"
         Me.Text = "Mitchell's Mortgage Manager"
+        CType(Me.HouseIcon, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -197,4 +264,7 @@ Partial Class Form1
     Friend WithEvents Term As Label
     Friend WithEvents MortLabel As Label
     Friend WithEvents Mortgage As TextBox
+    Friend WithEvents HouseIcon As PictureBox
+    Friend WithEvents Title As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

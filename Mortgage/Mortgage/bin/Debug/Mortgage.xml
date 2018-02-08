@@ -22,5 +22,10 @@ Mortgage
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:Mortgage.My.Resources.Resources.house">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 </members>
 </doc>
