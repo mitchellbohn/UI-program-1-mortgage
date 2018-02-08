@@ -94,7 +94,7 @@
             down = Double.Parse(TextPayment.Text)
             interest = Double.Parse(TextInterest.Text)
             term = Double.Parse(TextTerm.Text)
-            mortgage = ((price - down) * interest * (interest + 1) ^ (term * 12)) / ((interest + 1) ^ (term * 12) - 1)
+            mortgage = (((price - down) * interest * (interest + 1) ^ (term)) / ((interest + 1) ^ (term) - 1)) / 12
             TextMort.Text = mortgage.ToString()
             TextMort.Visible = True
             MortLabel.Visible = True
