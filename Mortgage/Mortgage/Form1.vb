@@ -103,6 +103,7 @@
             interest = Double.Parse(TextInterest.Text) / 100
             term = Double.Parse(TextTerm.Text)
             mortgage = (((price - down) * interest * (interest + 1) ^ (term)) / ((interest + 1) ^ (term) - 1)) / 12
+            mortgage = Decimal.Round(mortgage, 2, MidpointRounding.AwayFromZero)
             TextMort.Text = mortgage.ToString()
             TextMort.Visible = True
             MortLabel.Visible = True

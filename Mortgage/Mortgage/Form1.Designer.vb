@@ -39,14 +39,15 @@ Partial Class Form1
         Me.HouseIcon = New System.Windows.Forms.PictureBox()
         Me.Title = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Menu = New System.Windows.Forms.TabControl()
+        Me.TabMenu = New System.Windows.Forms.TabControl()
         Me.HomePage = New System.Windows.Forms.TabPage()
+        Me.HomeTitle = New System.Windows.Forms.Label()
+        Me.HomeMsg = New System.Windows.Forms.Label()
         Me.MortTab = New System.Windows.Forms.TabPage()
         Me.HowMuch = New System.Windows.Forms.TabPage()
-        Me.Home = New System.Windows.Forms.Label()
         CType(Me.HouseIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Menu.SuspendLayout()
+        Me.TabMenu.SuspendLayout()
         Me.HomePage.SuspendLayout()
         Me.MortTab.SuspendLayout()
         Me.SuspendLayout()
@@ -61,7 +62,7 @@ Partial Class Form1
         Me.TextPrice.Location = New System.Drawing.Point(170, 18)
         Me.TextPrice.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.TextPrice.Name = "TextPrice"
-        Me.TextPrice.Size = New System.Drawing.Size(377, 22)
+        Me.TextPrice.Size = New System.Drawing.Size(377, 33)
         Me.TextPrice.TabIndex = 0
         '
         'TextPayment
@@ -74,7 +75,7 @@ Partial Class Form1
         Me.TextPayment.Location = New System.Drawing.Point(170, 52)
         Me.TextPayment.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.TextPayment.Name = "TextPayment"
-        Me.TextPayment.Size = New System.Drawing.Size(377, 22)
+        Me.TextPayment.Size = New System.Drawing.Size(377, 33)
         Me.TextPayment.TabIndex = 1
         '
         'TextInterest
@@ -87,7 +88,7 @@ Partial Class Form1
         Me.TextInterest.Location = New System.Drawing.Point(170, 86)
         Me.TextInterest.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.TextInterest.Name = "TextInterest"
-        Me.TextInterest.Size = New System.Drawing.Size(377, 22)
+        Me.TextInterest.Size = New System.Drawing.Size(377, 33)
         Me.TextInterest.TabIndex = 2
         '
         'TextTerm
@@ -100,7 +101,7 @@ Partial Class Form1
         Me.TextTerm.Location = New System.Drawing.Point(170, 120)
         Me.TextTerm.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.TextTerm.Name = "TextTerm"
-        Me.TextTerm.Size = New System.Drawing.Size(377, 22)
+        Me.TextTerm.Size = New System.Drawing.Size(377, 33)
         Me.TextTerm.TabIndex = 3
         '
         'Calculate
@@ -217,7 +218,7 @@ Partial Class Form1
         Me.TextMort.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.TextMort.Name = "TextMort"
         Me.TextMort.ReadOnly = True
-        Me.TextMort.Size = New System.Drawing.Size(377, 22)
+        Me.TextMort.Size = New System.Drawing.Size(377, 33)
         Me.TextMort.TabIndex = 12
         Me.TextMort.Visible = False
         '
@@ -255,37 +256,63 @@ Partial Class Form1
         Me.PictureBox1.TabIndex = 15
         Me.PictureBox1.TabStop = False
         '
-        'Menu
+        'TabMenu
         '
-        Me.Menu.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.TabMenu.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Menu.Controls.Add(Me.HomePage)
-        Me.Menu.Controls.Add(Me.MortTab)
-        Me.Menu.Controls.Add(Me.HowMuch)
-        Me.Menu.Font = New System.Drawing.Font("Arial", 14.0!)
-        Me.Menu.Location = New System.Drawing.Point(0, 96)
-        Me.Menu.Name = "Menu"
-        Me.Menu.SelectedIndex = 0
-        Me.Menu.Size = New System.Drawing.Size(564, 364)
-        Me.Menu.TabIndex = 16
+        Me.TabMenu.Controls.Add(Me.HomePage)
+        Me.TabMenu.Controls.Add(Me.MortTab)
+        Me.TabMenu.Controls.Add(Me.HowMuch)
+        Me.TabMenu.Font = New System.Drawing.Font("Arial", 14.0!)
+        Me.TabMenu.Location = New System.Drawing.Point(0, 96)
+        Me.TabMenu.Name = "TabMenu"
+        Me.TabMenu.SelectedIndex = 0
+        Me.TabMenu.Size = New System.Drawing.Size(564, 364)
+        Me.TabMenu.TabIndex = 16
         '
         'HomePage
         '
-        Me.HomePage.BackColor = System.Drawing.Color.White
+        Me.HomePage.BackColor = System.Drawing.Color.AntiqueWhite
         Me.HomePage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.HomePage.Controls.Add(Me.Home)
+        Me.HomePage.Controls.Add(Me.HomeTitle)
+        Me.HomePage.Controls.Add(Me.HomeMsg)
         Me.HomePage.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.HomePage.Location = New System.Drawing.Point(4, 31)
+        Me.HomePage.Location = New System.Drawing.Point(4, 41)
         Me.HomePage.Name = "HomePage"
         Me.HomePage.Padding = New System.Windows.Forms.Padding(3)
-        Me.HomePage.Size = New System.Drawing.Size(556, 329)
+        Me.HomePage.Size = New System.Drawing.Size(556, 319)
         Me.HomePage.TabIndex = 1
         Me.HomePage.Text = "Home Page"
         '
+        'HomeTitle
+        '
+        Me.HomeTitle.Font = New System.Drawing.Font("Arial", 20.0!)
+        Me.HomeTitle.Location = New System.Drawing.Point(0, 0)
+        Me.HomeTitle.Name = "HomeTitle"
+        Me.HomeTitle.Size = New System.Drawing.Size(556, 86)
+        Me.HomeTitle.TabIndex = 1
+        Me.HomeTitle.Text = "Amet aliquam"
+        Me.HomeTitle.TextAlign = System.Drawing.ContentAlignment.BottomLeft
+        '
+        'HomeMsg
+        '
+        Me.HomeMsg.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.HomeMsg.AutoSize = True
+        Me.HomeMsg.Location = New System.Drawing.Point(0, 86)
+        Me.HomeMsg.MaximumSize = New System.Drawing.Size(512, 0)
+        Me.HomeMsg.MinimumSize = New System.Drawing.Size(512, 0)
+        Me.HomeMsg.Name = "HomeMsg"
+        Me.HomeMsg.Size = New System.Drawing.Size(512, 160)
+        Me.HomeMsg.TabIndex = 0
+        Me.HomeMsg.Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor in" &
+    "cididunt ut labore et dolore magna aliqua. Varius morbi enim nunc faucibus."
+        '
         'MortTab
         '
-        Me.MortTab.BackColor = System.Drawing.Color.White
+        Me.MortTab.BackColor = System.Drawing.Color.AntiqueWhite
         Me.MortTab.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.MortTab.Controls.Add(Me.TextMort)
         Me.MortTab.Controls.Add(Me.TextPrice)
@@ -299,44 +326,32 @@ Partial Class Form1
         Me.MortTab.Controls.Add(Me.HousePrice)
         Me.MortTab.Controls.Add(Me.HousePayment)
         Me.MortTab.Controls.Add(Me.MortLabel)
-        Me.MortTab.Location = New System.Drawing.Point(4, 31)
+        Me.MortTab.Location = New System.Drawing.Point(4, 41)
         Me.MortTab.Name = "MortTab"
         Me.MortTab.Padding = New System.Windows.Forms.Padding(3)
-        Me.MortTab.Size = New System.Drawing.Size(556, 329)
+        Me.MortTab.Size = New System.Drawing.Size(556, 319)
         Me.MortTab.TabIndex = 0
         Me.MortTab.Text = "Mortgage Payment"
         '
         'HowMuch
         '
-        Me.HowMuch.BackColor = System.Drawing.Color.White
+        Me.HowMuch.BackColor = System.Drawing.Color.AntiqueWhite
         Me.HowMuch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.HowMuch.Cursor = System.Windows.Forms.Cursors.Default
-        Me.HowMuch.Location = New System.Drawing.Point(4, 31)
+        Me.HowMuch.Location = New System.Drawing.Point(4, 41)
         Me.HowMuch.Name = "HowMuch"
-        Me.HowMuch.Size = New System.Drawing.Size(556, 329)
+        Me.HowMuch.Size = New System.Drawing.Size(556, 319)
         Me.HowMuch.TabIndex = 2
         Me.HowMuch.Text = "How Much House Can I Afford?"
         '
-        'Home
-        '
-        Me.Home.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Home.Location = New System.Drawing.Point(0, 0)
-        Me.Home.Name = "Home"
-        Me.Home.Size = New System.Drawing.Size(556, 329)
-        Me.Home.TabIndex = 0
-        Me.Home.Text = "Welcome"
-        Me.Home.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 21.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.LightGray
+        Me.BackColor = System.Drawing.Color.BurlyWood
         Me.ClientSize = New System.Drawing.Size(564, 521)
         Me.Controls.Add(Me.HouseIcon)
-        Me.Controls.Add(Me.Menu)
+        Me.Controls.Add(Me.TabMenu)
         Me.Controls.Add(Me.Title)
         Me.Controls.Add(Me.Quit)
         Me.Controls.Add(Me.PictureBox1)
@@ -348,8 +363,9 @@ Partial Class Form1
         Me.Text = "Mitchell's Mortgage Manager"
         CType(Me.HouseIcon, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Menu.ResumeLayout(False)
+        Me.TabMenu.ResumeLayout(False)
         Me.HomePage.ResumeLayout(False)
+        Me.HomePage.PerformLayout()
         Me.MortTab.ResumeLayout(False)
         Me.MortTab.PerformLayout()
         Me.ResumeLayout(False)
@@ -372,9 +388,10 @@ Partial Class Form1
     Friend WithEvents HouseIcon As PictureBox
     Friend WithEvents Title As Label
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Menu As TabControl
+    Friend WithEvents TabMenu As TabControl
     Friend WithEvents HomePage As TabPage
     Friend WithEvents MortTab As TabPage
     Friend WithEvents HowMuch As TabPage
-    Friend WithEvents Home As Label
+    Friend WithEvents HomeMsg As Label
+    Friend WithEvents HomeTitle As Label
 End Class
